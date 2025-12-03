@@ -1,0 +1,89 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "bb1904d4-342d-4054-af85-c0a334f46841",
+   "metadata": {},
+   "source": [
+    "PROJECT 5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "7ed05afe-7d61-427f-b5da-a9cfa76747f1",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stderr",
+     "output_type": "stream",
+     "text": [
+      "2025-11-28 20:28:14.599 WARNING streamlit.runtime.scriptrunner_utils.script_run_context: Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.246 \n",
+      "  \u001b[33m\u001b[1mWarning:\u001b[0m to view this Streamlit app on a browser, run it with the following\n",
+      "  command:\n",
+      "\n",
+      "    streamlit run C:\\Users\\DELL\\OneDrive\\Documents\\anaconda\\Lib\\site-packages\\ipykernel_launcher.py [ARGUMENTS]\n",
+      "2025-11-28 20:28:15.247 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.249 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.250 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.251 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.253 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.254 Session state does not function when running a script without `streamlit run`\n",
+      "2025-11-28 20:28:15.255 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.255 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.257 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.257 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.258 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.259 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n",
+      "2025-11-28 20:28:15.260 Thread 'MainThread': missing ScriptRunContext! This warning can be ignored when running in bare mode.\n"
+     ]
+    }
+   ],
+   "source": [
+    "import streamlit as st\n",
+    "\n",
+    "st.title(\"Number Checker\")\n",
+    "\n",
+    "num = st.number_input(\"Enter a number:\", format=\"%.2f\")\n",
+    "\n",
+    "if st.button(\"Check\"):\n",
+    "    if num > 0:\n",
+    "        st.success(f\"{num} is Positive\")\n",
+    "    elif num < 0:\n",
+    "        st.error(f\"{num} is Negative\")\n",
+    "    else:\n",
+    "        st.info(\"The number is Zero\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f766896b-d177-487c-99ab-a78c2b1acd15",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.13.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
